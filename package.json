@@ -1,0 +1,15 @@
+{
+  "name": "imc-user-access-management",
+  "version": "1.0.0",
+  "description": "User Access Management - Full Stack Web Application (Angular 20 + Slim PHP + PostgreSQL)",
+  "scripts": {
+    "install:backend": "cd backend && composer install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "setup": "npm run install:all && npm run migrate",
+    "build": "cd frontend && npm install && npm run build",
+    "backend": "cd backend && php -S 0.0.0.0:8080 public/index.php",
+    "frontend": "cd frontend && npm start",
+    "migrate": "cd backend && php database/migrate.php"
+  }
+}
