@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+backend/vendor/
+frontend/node_modules/
+
+# Environment files
+backend/.env
+*.env
+.env.*
+!.env.example
+!backend/.env.example
+!backend/.env.supabase.example
+
+# Build outputs
+dist/
+frontend/dist/
+.angular/
+frontend/.angular/
+
+# Logs & temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tmp/
+*.sqlite
+backend/database/*.sqlite
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

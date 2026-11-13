@@ -1,0 +1,11 @@
+providers = ["php"]
+
+[phases.setup]
+nixPkgs = ["php83", "php83Extensions.pdo_pgsql", "php83Extensions.pgsql", "composer"]
+
+[phases.install]
+cmds = ["cd backend && composer install --no-dev --optimize-autoloader"]
+
+[start]
+cmd = "cd backend && php -S 0.0.0.0:$PORT public/index.php"
+
